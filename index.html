@@ -24,9 +24,13 @@ function getComputerChoice() {
 //match() will prompt choice from the user and decide the winner of the match
 function playRound(playerChoice, compChoice){
     let result;  
-    if ((playerChoice === 'Rock' && compChoice === 'Scissor') || (playerChoice === 'Paper' && compChoice === 'Rock') || (playerChoice === 'Scissor' && compChoice === 'Paper'))
+    if ((playerChoice === 'Rock' && compChoice === 'Scissor') 
+        || (playerChoice === 'Paper' && compChoice === 'Rock') 
+        || (playerChoice === 'Scissor' && compChoice === 'Paper'))
     result = 1;
-    else if ((playerChoice === 'Rock' && compChoice === 'Paper') || (playerChoice === 'Paper' && compChoice === 'Scissor') || (playerChoice === 'Scissor' && compChoice === 'Rock'))
+    else if ((playerChoice === 'Rock' && compChoice === 'Paper') 
+        || (playerChoice === 'Paper' && compChoice === 'Scissor') 
+        || (playerChoice === 'Scissor' && compChoice === 'Rock'))
     result = 0;
 
     return(result);
